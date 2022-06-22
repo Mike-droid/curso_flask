@@ -715,3 +715,7 @@ Conectar con nuestro servidor local => `gcloud auth application-default login`
 ### Implementación de Firestore
 
 Instalaremos [Flask Firebase Admin](https://pypi.org/project/flask-firebase-admin/) con ``pip install flask-firebase-admin``.
+
+### Autenticación de usuarios: Login
+
+Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se instala con ``pip install flask-login``.
