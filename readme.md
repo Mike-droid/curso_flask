@@ -689,3 +689,10 @@ class MainTest(TestCase):
 ### App Factory
 
 Organizamos un poco mejor nuestros archivos.
+
+### Uso de Blueprints
+
+Un blueprit es como una pequeña aplicación de Flask, con rutas, vistas y templates. Debe ser importada dentro de una app de Flask para funcionar.
+
+Usaremos [Signals](https://flask.palletsprojects.com/en/2.1.x/signals/) instalando [Blinker](https://pypi.org/project/blinker/)
+
