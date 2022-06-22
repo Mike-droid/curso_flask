@@ -697,3 +697,21 @@ Un blueprit es como una pequeña aplicación de Flask, con rutas, vistas y templ
 Usaremos [Signals](https://flask.palletsprojects.com/en/2.1.x/signals/) instalando [Blinker](https://pypi.org/project/blinker/)
 
 ### Blueprints 2
+
+### Base de datos y App Engine con Flask
+
+Flask no tiene un ORM definido por defecto. Podemos utilizar el que nosotros querramos. Existe [SQL Alchemy](https://www.sqlalchemy.org/).
+
+[Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+
+### Configuración de Google Cloud SDK
+
+[Artículo en Platzi](https://platzi.com/clases/1540-flask/18834-configuracion-de-google-cloud-sdk/)
+
+### Configuración de proyecto en Google Cloud Platform
+
+Conectar con nuestro servidor local => `gcloud auth application-default login`
+
+### Implementación de Firestore
+
+Instalaremos [Flask Firebase Admin](https://pypi.org/project/flask-firebase-admin/) con ``pip install flask-firebase-admin``.
