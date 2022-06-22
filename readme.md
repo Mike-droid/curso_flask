@@ -683,3 +683,9 @@ class MainTest(TestCase):
         self.assertRedirects(response, url_for('index'))
 
 ````
+
+## Proyecto
+
+### App Factory
+
+Organizamos un poco mejor nuestros archivos.
