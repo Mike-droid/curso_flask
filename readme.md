@@ -620,3 +620,66 @@ Y mostramos la alerta (que se puede cerrar) en base.html:
 {% endblock %}
 ````
 
+### Pruebas básicas con Flask-testing
+
+Usaremos [Flask Testing](https://pythonhosted.org/Flask-Testing/)
+
+Instalamos ``pip install flask-testing``
+
+Importamos ``unittest``
+
+Y hacemos esto en main.py:
+
+````python
+import unittest
+
+@app.cli.command()
+def test():
+    tests = unittest.TestLoader().discover('tests')
+    unittest.TextTestRunner().run(tests)
+````
+
+Creamos una carpeta 'tests'. Para correr los tests hacemos ``flask test``.
+
+Creamos un archivo donde ejecutaremos pruebas, tiene que iniciar con 'test' el nombre del archivo.
+
+````python
+from flask_testing import TestCase
+from flask import current_app, url_for
+
+from main import app
+
+
+class MainTest(TestCase):
+    def create_app(self):
+        app.config['TESTING'] = True
+        app.config['WTF_CSRF_ENABLED'] = False  # CSRF Protection -> https://flask-wtf.readthedocs.io/en/0.15.x/csrf/
+        return app
+
+    def test_app_exists(self):
+        self.assertIsNotNone(current_app)
+
+
+    def test_app_in_test_mode(self):
+        self.assertTrue(current_app.config['TESTING'])
+
+
+    def test_index_redirects(self):
+        response = self.client.get(url_for('index'))
+        self.assertRedirects(response, url_for('hello'))
+
+
+    def test_hello_get(self):
+        response = self.client.get(url_for('hello'))
+        self.assert200(response)
+
+
+    def test_hello_post(self):
+        fake_form = {
+            'username': 'fake',
+            'password': 'fake-password'
+        }
+        response = self.client.post(url_for('hello'), data=fake_form)
+        self.assertRedirects(response, url_for('index'))
+
+````
