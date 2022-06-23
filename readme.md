@@ -733,3 +733,36 @@ Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se ins
 ### Deploy a producción con App Engine
 
 Usamos [Google App Engine](https://cloud.google.com/appengine?hl=es) para subir nuestro proyecto a producción. Hay que tomar en cuenta que nos pedirá una tarjeta bancaria.
+
+## Examen
+
+[] ¿Cuál es la función correcta para crear un link interno a una ruta específica?: url_for()
+[] ¿Qué variable hay que crear en la terminal para activar el debugger y reloader?: ``FLASK_DEBUG=1``
+[] ¿Cómo se llama el archivo de configuración de AppEngine?: app.yaml
+[] ¿Para qué nos sirve un Blueprint?: Para modularizar la aplicación, son un patrón de rutas, funciones y templates que nos permiten crear secciones de la aplicación
+[] ¿Cómo se llama el directorio donde Flask busca archivos estáticos por defecto?: static
+[] ¿Para qué utilizamos @login_manager.user_loader?: Para proteger la ruta decorada y solo permitir acceso a usuarios autenticados 💢
+[] ¿Cuál es el decorador para crear una función para manejar errores?: ``@app.errorhandler(error)``
+[] ¿Para qué sirve Flask?: Todas
+[] ¿Cómo debemos guardar un password del usuario?: Nunca en el texto original
+[] ¿Qué debes conocer para comenzar con Flask?: Conocimientos básicos de Python, pip y virtualenv
+[] ¿Cómo debemos cuidar o manejar nuestro SECRET_KEY de producción?: No debe estar disponible en nuestro repositorio
+[] Nombre de la variable que Flask expone para acceder a la información de la petición del usuario: current_app 💢
+[] ¿Qué es un flash?: Un mensaje que presentar información al usuario sobre la acción que acaba de realizar
+[] ¿Con qué comando prendemos el servidor local?: ``flask run``
+[] ¿Cuál es la sintaxis correcta para representar una variable?: ``{{ variable }}``
+[] ¿Cuál es la sintaxis correcta para iniciar un bloque condicional?: ``{%``
+[] Una aplicación web utiliza el internet y un __ para comunicarse con el servidor: Navegador Web
+[] ¿Qué tipo de base de datos es Firestore?: No SQL Orientada a Documentos
+[] Después de crear un nuevo Blueprint, ¿cómo lo integramos en la aplicación?: Llamamos la función ``app.register_blueprint()`` y pasamos nuestra instancia de Blueprint como parámetro
+[] ¿Cuál es el template inicial que tenemos que extender en Bootstrap?: ``'bootstrap/base.html'``
+[] Para desplegar una forma y encriptar la sesiones, debemos de declarar esta variable en app.config: SECRET_KEY
+[] Flask-Login requiere la implementación de una clase UserModel con propiedades específicas: Verdadero
+[] Nombre del método que tenemos que implementar en una nueva instancia de flask_testing.TestCase: ``create_app``
+[] ¿Qué variable hay que declarar en la terminal para prender el servidor de Flask?: ``FLASK_APP=main.py``
+[] ¿A qué nos referimos con microframework?: Un framework que no cuenta inicialmente con funcionalidades específicas, como ORM o autenticación
+[] Sintaxis correcta para declarar una ruta dinámica "users" que recibe "user_id" como parámetro: ``/users/<user_id>``
+[] ¿Cuál es el comando que agregamos después de instalar GCloud SDK?: ```gcloud```
+[] ¿Con qué comando creamos una nueva instancia de Flask?: ``app = Flask(__name__)``
+[] ¿Cuál es la variable que expone flask_wtf.FlaskForm para validar formas cuando son enviadas y qué tipo de variable es?: validate_on_submit, boolean
+[] Variable que usamos para detectar si el usuario está firmado. Disponible en cualquier template: current_user.is_authenticated 
