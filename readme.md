@@ -729,3 +729,7 @@ Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se ins
 ### Eliminar tareas
 
 ### Editar tareas
+
+### Deploy a producción con App Engine
+
+Usamos [Google App Engine](https://cloud.google.com/appengine?hl=es) para subir nuestro proyecto a producción. Hay que tomar en cuenta que nos pedirá una tarjeta bancaria.
