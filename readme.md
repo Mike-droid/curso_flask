@@ -721,3 +721,5 @@ Instalaremos [Flask Firebase Admin](https://pypi.org/project/flask-firebase-admi
 Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se instala con ``pip install flask-login``.
 
 ### Autenticación de usuarios: Logout
+
+### Signup
