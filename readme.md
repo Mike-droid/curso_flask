@@ -727,3 +727,5 @@ Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se ins
 ### Agregar tareas
 
 ### Eliminar tareas
+
+### Editar tareas
