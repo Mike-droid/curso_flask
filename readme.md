@@ -723,3 +723,5 @@ Usaremos [Flask-Login](https://flask-login.readthedocs.io/en/latest/) que se ins
 ### Autenticación de usuarios: Logout
 
 ### Signup
+
+### Agregar tareas
